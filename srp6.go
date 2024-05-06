@@ -1,4 +1,4 @@
-package main
+package srp6
 
 import (
 	"bytes"

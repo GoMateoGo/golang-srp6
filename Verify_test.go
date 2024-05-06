@@ -1,8 +1,9 @@
-package main
+package srp6
 
 import (
 	"fmt"
 	"strings"
+	"testing"
 )
 
 func Verify(userName, pwd string) ([]byte, []byte) {
@@ -24,7 +25,7 @@ func Verify(userName, pwd string) ([]byte, []byte) {
 	return nowSalt, nowVerifier
 }
 
-func main() {
+func TestPwd(t *testing.T) {
 	var userName = "sUser"
 	var password = "sPassword"
 
